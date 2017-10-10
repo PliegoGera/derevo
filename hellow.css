@@ -1,0 +1,288 @@
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 45px 45px 0;
+}
+
+
+/*===============================
+=            anition            =
+===============================*/
+
+
+.principal {
+  transition:0.5s linear all;
+  opacity:1;
+}
+/*=====  End of anition  ======*/
+
+div.qvobject, div.qvplaceholder {
+			padding: 30px 10px 10px 10px;
+			height: 400px;
+		}
+
+#popup {
+	background-color: #c3534b;
+	color: #FFFFFF;
+	position: fixed;
+	max-width: 250px;
+	padding: 10px;
+	margin: 10px;
+	bottom: 0;
+	right: 0;
+	display: none;
+	border-radius: 5px;
+	z-index: 6;
+	font-family: sans-serif;
+}
+
+.close {
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .2;
+	position: absolute;
+	right: 9px;
+	top: 7px;
+}
+
+.close:hover {
+	opacity: .5;
+}
+
+#popupText {
+	margin-right: 23px;
+}
+
+
+body{
+	background: #eeeeee;
+}
+/*==============================
+=            header            =
+==============================*/
+
+.banner{
+	background: url('assets/header.jpg');
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	transition: all 1s;
+}
+
+.titulo{
+	position: absolute;
+	 overflow: hidden;
+  width: 100%;
+  height:100%;
+  transition: .5s ease;
+  background: rgba(0,0,0,.5);
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text .sup{
+	font-size: 130px;
+}
+.text .sub{
+	margin-top: -60px;
+	font-size: 32px;
+}
+
+
+ @media screen and (max-width: 768px) {
+.banner{
+	
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+ 	.text .sup{
+	font-size: 50px;
+}
+.text .sub{
+	margin-top: -20px;
+	font-size: 10px;
+}
+ }
+
+/*=====  End of header  ======*/
+
+/*============================
+=            menu            =
+============================*/
+
+header{
+	background-color: #333;
+}
+nav{
+	width: 100%;
+	display: flex;
+  justify-content: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 70px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+
+li a:hover {
+    background-color: #111;
+    text-decoration: none;
+    color: #fff;
+}
+li a:focus {
+    background-color: #111;
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 998px) {
+	li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 768px) {
+	li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+}
+/*=====  End of menu  ======*/
+
+/*===================================
+=            seccion uno            =
+===================================*/
+.main{
+	background: #fff;
+}
+.greentitle{
+	background: #81b954;
+	line-height: 30px;
+	padding: 5px 10px;
+	margin: 10px;
+}
+.greentitle p{
+	margin-bottom: 0px;
+	color: #fff;
+	font-size: 20px;
+}
+@media screen and (max-width: 998px) {
+	.greentitle p{
+	margin-bottom: 0px;
+	color: #fff;
+	font-size: 16px;
+}
+}
+@media screen and (max-width: 768px) {
+	.greentitle p{
+	margin-bottom: 0px;
+	color: #fff;
+	font-size: 12px;
+}
+}
+/*=====  End of seccion uno  ======*/
+/*===================================
+=            seccion dos            =
+===================================*/
+
+.chart{
+	padding: 40px;
+}
+@media screen and (max-width: 768px) {
+	.chart{
+	padding: 10px;
+}
+}
+/*=====  End of seccion dos  ======*/
+
+
+/*==============================
+=            footer            =
+==============================*/
+.foot{
+	background: #332e28;
+	color: #fff;
+	width: 100%;
+	text-align: right;
+}
+
+/*=====  End of footer  ======*/
+
+
+
+
+.planet-container {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.planet-view {
+  padding: 10px;
+}
+
+.planet-view.ng-animate {
+  transition: all ease 0.4s;
+  position: absolute;
+}
+
+.planet-view.ng-enter {
+  top: 200px;
+  opacity: 0;
+}
+
+.planet-view.ng-leave,
+.planet-view.ng-enter.ng-enter-active {
+  top: 0;
+  opacity: 1;
+}
+
+.planet-view.ng-leave.ng-leave-active {
+  top: -200px;
+  opacity: 0;
+}
